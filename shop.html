@@ -17,7 +17,7 @@
 				<div class="main_header">
 					<div class="layout_width">
 						<a class="button_menu" href="#"><span></span></a>
-						<a class="logo" href="index.html"><img alt="" src="images/logo.jpg"></a>
+						<a class="logo" href="index.html"><img alt="" src="images/logo.jpg"><img class="light_sky" alt="" src="images/light_sky.png"></a>
 						<div class="right_menu">
 							<a class="special_button" href="">Специальное предложение</a>
 							<div class="header_phone">8 (905) 163 78 87</div>
@@ -54,8 +54,75 @@
 										<header class="product_title"><h5><a href="#">Delphin 230/50</a></h5></header>
 										<div class="product_content">SUZZARA BLUE DELPHIN PIUSI, европейский лидер в области решений для заправки AdBlue® (карбамида), представляет новую модель SuzzaraBlue Delphin. Эта новая система, разработанная с учетом потребностей автомастерских, отличается простотой транспортировки и позволяет безопасно заправлять карбамид в баки транспортных средств. В комплектацию Delphin входит прочная тележка, на которую устанавливается бочка для карбамида. </div>
 										<div class="product_footer">
-											<a href="#" class="price_button">Оставить заявку</a>
+											<a href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='block';document.getElementById('fade').style.display='block'" class="price_button show-btn" >Оставить заявку</a>
 											<a href="#" class="post_foot_img" download ></a>
+											<div id="envelope" class="envelope">
+												<a class="close-btn" title="Закрыть" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='none';document.getElementById('fade').style.display='none'"></a>
+												<div class="title">Оставьте заявку </div>
+												<form method="post" action="">
+													<input type="text" name="phone" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Введите ваш номер телефона':this.value;" value="Введите ваш номер телефона" id="phone" class="your-phone" required />
+													<input type="text" name="email" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Введите ваш email':this.value;" value="Введите ваш email" id="email" class="email-address" required />
+													<input type="submit" name="button" value="Отправить" class="send-message" onClick="ValidMail(); ValidPhone();">
+													
+													<div class="cb-massage">			
+														<input type="checkbox" name="cb" value="" checked="checked">
+														<label for="">Согласие на обработку персональных данных </label>
+													</div>				
+												</form>
+											</div>
+											<div id="fade" class="black-overlay"></div>
+										</div>
+									</article>
+								</div>
+								<div class="one_half">
+									<article class="col_product">
+										<figure class="product_img"><a href="#"><img src="images/piusi.jpg" alt=""></a></figure>
+										<header class="product_title"><h5><a href="#">PIUSI-SELFSERVICE-MC</a></h5></header>
+										<div class="product_content">SUZZARA BLUE DELPHIN PIUSI, европейский лидер в области решений для заправки AdBlue® (карбамида), представляет новую модель SuzzaraBlue Delphin. Эта новая система, разработанная с учетом потребностей автомастерских, отличается простотой транспортировки и позволяет безопасно заправлять карбамид в баки транспортных средств. В комплектацию Delphin входит прочная тележка, на которую устанавливается бочка для карбамида. </div>
+										<div class="product_footer">
+											<a href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='block';document.getElementById('fade').style.display='block'" class="price_button show-btn" >Оставить заявку</a>
+											<a href="#" class="post_foot_img" download ></a>
+											<div id="envelope" class="envelope">
+												<a class="close-btn" title="Закрыть" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='none';document.getElementById('fade').style.display='none'"></a>
+												<div class="title">Оставьте заявку </div>
+												<form method="post" action="">
+													<input type="text" name="phone" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Введите ваш номер телефона':this.value;" value="Введите ваш номер телефона" id="phone" class="your-phone" required />
+													<input type="text" name="email" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Введите ваш email':this.value;" value="Введите ваш email" id="email" class="email-address" required />
+													<input type="submit" name="button" value="Отправить" class="send-message" onClick="ValidMail(); ValidPhone();">
+													
+													<div class="cb-massage">			
+														<input type="checkbox" name="cb" value="" checked="checked">
+														<label for="">Согласие на обработку персональных данных </label>
+													</div>				
+												</form>
+											</div>
+											<div id="fade" class="black-overlay"></div>
+										</div>
+									</article>
+								</div>
+								<div class="one_half">
+									<article class="col_product">
+										<figure class="product_img"><a href="#"><img src="images/piusi.jpg" alt=""></a></figure>
+										<header class="product_title"><h5><a href="#">PIUSI-SELFSERVICE-MC</a></h5></header>
+										<div class="product_content">SUZZARA BLUE DELPHIN PIUSI, европейский лидер в области решений для заправки AdBlue® (карбамида), представляет новую модель SuzzaraBlue Delphin. Эта новая система, разработанная с учетом потребностей автомастерских, отличается простотой транспортировки и позволяет безопасно заправлять карбамид в баки транспортных средств. В комплектацию Delphin входит прочная тележка, на которую устанавливается бочка для карбамида. </div>
+										<div class="product_footer">
+											<a href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='block';document.getElementById('fade').style.display='block'" class="price_button show-btn" >Оставить заявку</a>
+											<a href="#" class="post_foot_img" download ></a>
+											<div id="envelope" class="envelope">
+												<a class="close-btn" title="Закрыть" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='none';document.getElementById('fade').style.display='none'"></a>
+												<div class="title">Оставьте заявку </div>
+												<form method="post" action="">
+													<input type="text" name="phone" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Введите ваш номер телефона':this.value;" value="Введите ваш номер телефона" id="phone" class="your-phone" required />
+													<input type="text" name="email" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Введите ваш email':this.value;" value="Введите ваш email" id="email" class="email-address" required />
+													<input type="submit" name="button" value="Отправить" class="send-message">
+													
+													<div class="cb-massage">			
+														<input type="checkbox" name="cb" value="" checked="checked">
+														<label for="">Согласие на обработку персональных данных </label>
+													</div>				
+												</form>
+											</div>
+											<div id="fade" class="black-overlay"></div>
 											<div class="clear"></div>
 										</div>
 									</article>
@@ -66,32 +133,23 @@
 										<header class="product_title"><h5><a href="#">PIUSI-SELFSERVICE-MC</a></h5></header>
 										<div class="product_content">SUZZARA BLUE DELPHIN PIUSI, европейский лидер в области решений для заправки AdBlue® (карбамида), представляет новую модель SuzzaraBlue Delphin. Эта новая система, разработанная с учетом потребностей автомастерских, отличается простотой транспортировки и позволяет безопасно заправлять карбамид в баки транспортных средств. В комплектацию Delphin входит прочная тележка, на которую устанавливается бочка для карбамида. </div>
 										<div class="product_footer">
-											<a href="#" class="price_button">Оставить заявку</a>
+											<a href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='block';document.getElementById('fade').style.display='block'" class="price_button show-btn" >Оставить заявку</a>
 											<a href="#" class="post_foot_img" download ></a>
-											<div class="clear"></div>
-										</div>
-									</article>
-								</div>
-								<div class="one_half">
-									<article class="col_product">
-										<figure class="product_img"><a href="#"><img src="images/piusi.jpg" alt=""></a></figure>
-										<header class="product_title"><h5><a href="#">PIUSI-SELFSERVICE-MC</a></h5></header>
-										<div class="product_content">SUZZARA BLUE DELPHIN PIUSI, европейский лидер в области решений для заправки AdBlue® (карбамида), представляет новую модель SuzzaraBlue Delphin. Эта новая система, разработанная с учетом потребностей автомастерских, отличается простотой транспортировки и позволяет безопасно заправлять карбамид в баки транспортных средств. В комплектацию Delphin входит прочная тележка, на которую устанавливается бочка для карбамида. </div>
-										<div class="product_footer">
-											<a href="#" class="price_button">Оставить заявку</a>
-											<a href="#" class="post_foot_img" download ></a>
-											<div class="clear"></div>
-										</div>
-									</article>
-								</div>
-								<div class="one_half">
-									<article class="col_product">
-										<figure class="product_img"><a href="#"><img src="images/piusi.jpg" alt=""></a></figure>
-										<header class="product_title"><h5><a href="#">PIUSI-SELFSERVICE-MC</a></h5></header>
-										<div class="product_content">SUZZARA BLUE DELPHIN PIUSI, европейский лидер в области решений для заправки AdBlue® (карбамида), представляет новую модель SuzzaraBlue Delphin. Эта новая система, разработанная с учетом потребностей автомастерских, отличается простотой транспортировки и позволяет безопасно заправлять карбамид в баки транспортных средств. В комплектацию Delphin входит прочная тележка, на которую устанавливается бочка для карбамида. </div>
-										<div class="product_footer">
-											<a href="#" class="price_button">Оставить заявку</a>
-											<a href="#" class="post_foot_img" download ></a>
+											<div id="envelope" class="envelope">
+												<a class="close-btn" title="Закрыть" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='none';document.getElementById('fade').style.display='none'"></a>
+												<div class="title">Оставьте заявку </div>
+												<form method="post" action="">
+													<input type="text" name="phone" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Введите ваш номер телефона':this.value;" value="Введите ваш номер телефона" id="phone" class="your-phone" required />
+													<input type="text" name="email" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Введите ваш email':this.value;" value="Введите ваш email" id="email" class="email-address" required />
+													<input type="submit" name="button" value="Отправить" class="send-message" onClick="ValidMail(); ValidPhone();">
+													
+													<div class="cb-massage">			
+														<input type="checkbox" name="cb" value="" checked="checked">
+														<label for="">Согласие на обработку персональных данных </label>
+													</div>				
+												</form>
+											</div>
+											<div id="fade" class="black-overlay"></div>
 											<div class="clear"></div>
 										</div>
 									</article>
